@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter from Ms. Ramos your Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            white-space: pre-line;
+            overflow: hidden;
+            background-image: url("sweetmj.jpg");
+            background-size: cover; 
+        }
+    </style>
+</head>
+<body>
+    <h2>My Dearest Love,</h2>
+    <p id="love-letter"></p>
+
+    <script>
+        const loveLetterText = `Happy Birthday and Happy Anniversary Love!, hmmm first thanks for the 1 year of patience
+            and love u give to me. I wish you had a happy year like mine with being together. Thank you
+            for understanding me all the time even when I make mistakes in our relationship. I am
+            grateful that despite my immaturity, you still stayed. I also appreciate you because of the
+            things you share, which help me to become more mature. Also, for treating me to good and
+            bad food (kwek-kwek huhu) and giving me time to accompany me on my errands, thank you
+            for never getting tired of dropping me off and picking me up at my dorm. We've been
+            through a lot of fights and I hope we learned from it. I hope that despite everything, you
+            continue to love and respect me more and more and more. And me gonna do the same. I
+            appreciate all the efforts and gifts for every special event you give to me I'm trying my best
+            to save and collect them all and decorate them in my room and use it. And also I'm not so
+            mayaman and perfect but I'm trying my best to give and satisfy you your wants in life. But I
+            promise when I'm so yaman I'm gonna spoil you all the way. I'm sorry for whatever my
+            pagkukulang is and sorry if I failed to live up to your standards. But I hope we spend more
+            years again together and be strong and understanding with each other more. And I just want
+            to remind you that I love you always Love and I'm here for you always. Happy Birthday
+            again and Happy Anniversary!`;
+        let index = 0;
+        const loveLetterElement = document.getElementById("love-letter");
+
+        function typeLetter() {
+            loveLetterElement.textContent += loveLetterText[index];
+            index++;
+            if (index < loveLetterText.length) {
+                setTimeout(typeLetter, 50); // Adjust the speed here (in milliseconds)
+            }
+        }
+
+        typeLetter();
+    </script>
+</body>
+</html>
